@@ -65,7 +65,7 @@ Goals :
 
 	</target>
 	<target name="compile-tests">
-		<javac srcdir="test"
+		<javac srcdir="build/test"
          destdir="build/test/classes" includeantruntime = "false"
          classpath="build/classes"
            />
