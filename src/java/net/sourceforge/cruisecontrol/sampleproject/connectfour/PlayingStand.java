@@ -42,8 +42,8 @@ package net.sourceforge.cruisecontrol.sampleproject.connectfour;
  * stalemating and illegal moves.
  */
 public class PlayingStand {
-    private static final int MAX_ROWS = 6;
-    private static final int MAX_COLUMNS = 7;
+    private static final int MAX_ROWS = 5;
+    private static final int MAX_COLUMNS = 6;
 
     private final Chip[][] stand = new Chip[MAX_COLUMNS][MAX_ROWS];
     private boolean gameOver;
