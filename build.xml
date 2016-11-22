@@ -92,12 +92,12 @@ Goals :
 
 	<target name="deploy" depends="runtests">
     <sequential>
-        <antcall target="tomcat-stop"/>
+        
             <echo>Deploy to server</echo>
             <copy todir="D:/MyProject/tomcat/webapps/PracticeRepo">
                 <fileset dir="D:/Git-potential/PracticeRepo/build"/>
             </copy>
-        <antcall target="tomcat-start"/>
+        
     </sequential>
 </target>
 
