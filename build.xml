@@ -13,7 +13,7 @@ Goals :
  Note : Clean up the previous build content files as the first step in the build process.
 -->
 
-<project name="javademo" default="runtests">
+<project name="javademo" default="deploy">
 
 <property file="build.properties"/>
 <property name="appversion" value="2.0"/>
@@ -65,7 +65,7 @@ Goals :
 
 	</target>
 	<target name="compile-tests">
-		<javac srcdir="build/test"
+		<javac srcdir="src/java"
          destdir="build/test/classes" includeantruntime = "false"
          classpath="build/classes"
            />
@@ -90,5 +90,15 @@ Goals :
 	
 	</target>
 
+	<target name="deploy" depends="runtests">
+    <sequential>
+        
+            <echo>Deploy to server</echo>
+            <copy todir="D:/MyProject/tomcat/webapps/PracticeRepo">
+                <fileset dir="D:/Git-potential/PracticeRepo/build"/>
+            </copy>
+        
+    </sequential>
+</target>
 
 </project>

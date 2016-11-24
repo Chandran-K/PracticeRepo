@@ -49,6 +49,10 @@ public class Cell {
         this.column = column;
     }
 
+/**
+ * Add this comments line for testing.
+ */
+
     public int getColumn() {
         return column;
     }
