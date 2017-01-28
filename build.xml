@@ -94,10 +94,11 @@ Goals :
     <sequential>
         
             <echo>Deploy to server</echo>
+			<!--
             <copy todir="D:/MyProject/tomcat/webapps/PracticeRepo">
                 <fileset dir="D:/Git-potential/PracticeRepo/build"/>
             </copy>
-        
+        -->
     </sequential>
 </target>
 
